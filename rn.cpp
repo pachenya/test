@@ -93,7 +93,7 @@ std::string sdowhat[] = {
   "Watch",
   "Fight",
   "Fly",
-  "Cray",
+  "Cry",
   "Run",
   "Cast a spell",
   "Fire",
