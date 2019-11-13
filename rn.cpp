@@ -38,7 +38,7 @@ std::string sfureiba[] = {
 	"Flying",
   "Cute",
 	"Friendry",
-	0,
+	"",
 };
 std::string sone[] = {
   "Man",
@@ -67,11 +67,77 @@ std::string sone[] = {
 	"Writer",
 	"Dog",
 	"Cat",
-	0,
+	"We",
+	"You",
+	"Me",
+	"They",
+	"Tiger",
+	"Ao-Oni",
+	"Ayumu",
+	"Tomo",
+	"Chiyo",
+	"Sakaki-san",
+	"Warlock",
+	"Elf",
+	"",
 };
+
+std::string sdowhat[] = {
+  "Fx",
+  "Hit",
+  "Smite",
+  "Kick",
+  "Pray",
+  "Slay",
+  "Beat",
+  "Watch",
+  "Fight",
+  "Fly",
+  "Cray",
+  "Run",
+  "Cast a spell",
+  "Fire",
+  "Shoot",
+  "Look",
+  "Eat it",
+  "Take",
+  "Get",
+  "Let it be",
+  "Say hello",
+	"",
+};
+
+int get_randint0(int n)
+{
+  if (n==0)
+    return 0;
+	return rand()%n;
+}
+
+std::string get_rnd_str(std::string s[])
+{
+  std::string rval = "";
+	for(int i=0;s[i].c_str()[0];i++)
+	{
+  	if (get_randint0(i)==0)
+		{
+      rval = s[i];
+		}
+	}
+  return rval;
+}
+
 int main()
 {
-				srand(time(0));
+	srand(time(0));
+	int cnt = 22;
+	for(int i=0;i<cnt;i++)
+	{
+	std::cout << get_rnd_str(sfureiba) << " ";
+  std::cout << get_rnd_str(sone)<< " ";
+	std::cout << get_rnd_str(sdowhat)<< " ";
+	std::cout << std::endl;
+	}
 				return 0;
 }
 
