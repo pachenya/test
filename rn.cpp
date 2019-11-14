@@ -25,7 +25,7 @@ std::string sfureiba[] = {
   "Little",
   "Big",
   "Fxn'shit",
-  "Lite-Gteen",
+  "Lite-Green",
   "Perfect",
   "Sexy",
   "Creative",
@@ -107,6 +107,33 @@ std::string sdowhat[] = {
 	"",
 };
 
+std::string satw[] = {
+  "Hell",
+  "Today",
+  "Rainy_Town",
+  "Mountain",
+  "Kyoto",
+  "Saitama",
+  "Dome",
+  "Basement",
+  "Station",
+  "Street",
+  "Pole",
+  "Chiba",
+  "Top_of_the_World",
+  "Zoo",
+  "Hive",
+  "HoTo",
+  "School",
+  "Black_Hole",
+  "Land",
+  "House",
+  "Ice",
+  "Bar",
+  "Sun",
+  "",
+};
+
 int get_randint0(int n)
 {
   if (n==0)
@@ -136,6 +163,7 @@ int main()
 	std::cout << get_rnd_str(sfureiba) << " ";
   std::cout << get_rnd_str(sone)<< " ";
 	std::cout << get_rnd_str(sdowhat)<< " ";
+	std::cout << "at "<<get_rnd_str(satw)<<"";
 	std::cout << std::endl;
 	}
 				return 0;
