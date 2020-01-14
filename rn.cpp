@@ -173,6 +173,7 @@ std::string satw[] = {
   "Dezeni land",
   "Pinchi",
   "Westside",
+	"Saitama City",
   "",
 };
 
